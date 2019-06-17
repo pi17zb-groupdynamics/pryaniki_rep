@@ -1,18 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace PrimeNumbers
 {
     public partial class MainForm : Form
     {
+        IPrimeCheckMethod method;
         public MainForm()
         {
             InitializeComponent();
+            radioButton1.Checked = true;
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                method = new BustDivisors();
+                label3.Text = Convert.ToString(method.IsPrime((int)numericUpDown1.Value));
+            }
+            if (radioButton2.Checked)
+            {
+                // Здесь тест Миллера-Рабина
+                //method = new MillerRabin();
+                //label3.Text = Convert.ToString(method.IsPrime((int)numericUpDown1.Value));
+            }
+            if (radioButton2.Checked)
+            {
+                // Здесь Решето Эратосфена
+                //method = new ();
+                //label3.Text = Convert.ToString(method.IsPrime((int)numericUpDown1.Value));
+            }
         }
     }
 }
