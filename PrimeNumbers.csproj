@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BustDivisors.cs" />
     <Compile Include="IPrimeCheckMethod.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
