@@ -26,12 +26,17 @@ namespace PrimeNumbers
                 //method = new MillerRabin();
                 //label3.Text = Convert.ToString(method.IsPrime((int)numericUpDown1.Value));
             }
-            if (radioButton2.Checked)
+            if (radioButton3.Checked)
             {
                 // Здесь Решето Эратосфена
-                //method = new ();
-                //label3.Text = Convert.ToString(method.IsPrime((int)numericUpDown1.Value));
+                method = new SieveOfEratosthenes();
+                label3.Text = Convert.ToString(method.IsPrime((int)numericUpDown1.Value));
             }
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
