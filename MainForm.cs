@@ -38,10 +38,5 @@ namespace PrimeNumbers
             label3.Text = $"Число {isPrime}, вычисление заняло {watch.Elapsed.TotalSeconds} секунд";
             
         }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
