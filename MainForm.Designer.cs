@@ -36,6 +36,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,12 +55,12 @@
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.numericUpDown1.Location = new System.Drawing.Point(266, 42);
             this.numericUpDown1.Maximum = new decimal(new int[] {
-            10000,
+            2000000000,
             0,
             0,
             0});
             this.numericUpDown1.Minimum = new decimal(new int[] {
-            10000,
+            2000000000,
             0,
             0,
             -2147483648});
@@ -118,7 +119,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(16, 383);
+            this.label2.Location = new System.Drawing.Point(12, 420);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(171, 37);
             this.label2.TabIndex = 6;
@@ -128,17 +129,25 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(193, 383);
+            this.label3.Location = new System.Drawing.Point(189, 420);
             this.label3.MinimumSize = new System.Drawing.Size(200, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(200, 37);
             this.label3.TabIndex = 7;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(12, 377);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(503, 29);
+            this.progressBar1.TabIndex = 8;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(527, 509);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
@@ -147,6 +156,7 @@
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Check prime number";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -166,6 +176,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 

@@ -6,6 +6,7 @@ namespace PrimeNumbers
 {
     class SieveOfEratosthenes : IPrimeCheckMethod
     {
+        public int Progress { get; set; }
         public bool IsPrime(int number)
         {
             bool[] sieve = new bool[number + 1];

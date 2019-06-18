@@ -1,7 +1,10 @@
 ﻿namespace PrimeNumbers
 {
+    public delegate void Progress(int percent);
     interface IPrimeCheckMethod
     {
-        bool IsPrime(int number);
+        int Number { get; }
+        bool Result { get; }
+        bool IsPrime(Progress progress);
     }
 }
