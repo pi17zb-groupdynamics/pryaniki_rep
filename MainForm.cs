@@ -21,18 +21,14 @@ namespace PrimeNumbers
             }
             if (radioButton2.Checked)
             {
-                // Здесь тест Миллера-Рабина
                 method = new MillerRabin();
             }
             if (radioButton3.Checked)
             {
-                // Здесь Решето Эратосфена
                 method = new SieveOfEratosthenes();
             }
             var watch = System.Diagnostics.Stopwatch.StartNew();
-            // the code that you want to measure comes here
             var isPrime = method.IsPrime((int)numericUpDown1.Value) ? "простое" : "не простое";
-            //label3.Text = Convert.ToString();
             watch.Stop();
 
             label3.Text = $"Число {isPrime}, вычисление заняло {watch.Elapsed.TotalSeconds} секунд";
