@@ -70,6 +70,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioButton1.Location = new System.Drawing.Point(19, 123);
             this.radioButton1.Name = "radioButton1";
@@ -87,7 +88,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(351, 41);
             this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Тест Миллера-Рабина";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
@@ -99,7 +99,6 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(329, 41);
             this.radioButton3.TabIndex = 4;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Решето Эратосфена";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
