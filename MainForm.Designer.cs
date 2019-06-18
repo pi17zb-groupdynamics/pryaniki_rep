@@ -159,7 +159,6 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Check prime number";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

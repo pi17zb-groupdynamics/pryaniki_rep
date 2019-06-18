@@ -30,6 +30,7 @@ namespace PrimeNumbers
                 thread.IsBackground = true;
                 thread.Start(method);
 
+                // Вывод результата
                 label3.Text = Convert.ToString(method.Result);
             }
             if (radioButton2.Checked)
@@ -57,10 +58,6 @@ namespace PrimeNumbers
         {
             progressBar1.Invoke((MethodInvoker)(() => progressBar1.Visible = true));
             progressBar1.Invoke((MethodInvoker)(() => progressBar1.Value = p));
-        }
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
