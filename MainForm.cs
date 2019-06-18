@@ -31,6 +31,8 @@ namespace PrimeNumbers
             }
             var watch = System.Diagnostics.Stopwatch.StartNew();
             // the code that you want to measure comes here
+            if (numericUpDown1 == null)
+                numericUpDown1.Value = 1;
             var isPrime = method.IsPrime((int)numericUpDown1.Value) ? "простое" : "не простое";
             //label3.Text = Convert.ToString();
             watch.Stop();
