@@ -27,7 +27,12 @@ namespace PrimeNumbers
             {
                 method = new SieveOfEratosthenes();
             }
+
             var watch = System.Diagnostics.Stopwatch.StartNew();
+
+            if (numericUpDown1 == null)
+                numericUpDown1.Value = 1;
+
             var isPrime = method.IsPrime((int)numericUpDown1.Value) ? "простое" : "не простое";
             watch.Stop();
 
