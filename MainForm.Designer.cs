@@ -150,6 +150,7 @@
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Check prime number";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
