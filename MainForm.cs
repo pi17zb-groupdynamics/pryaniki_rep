@@ -23,8 +23,8 @@ namespace PrimeNumbers
             if (radioButton2.Checked)
             {
                 // Здесь тест Миллера-Рабина
-                //method = new MillerRabin();
-                //label3.Text = Convert.ToString(method.IsPrime((int)numericUpDown1.Value));
+                method = new MillerRabin();
+                label3.Text = Convert.ToString(method.IsPrime((int)numericUpDown1.Value));
             }
             if (radioButton3.Checked)
             {
