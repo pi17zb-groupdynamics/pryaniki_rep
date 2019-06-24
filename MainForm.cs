@@ -39,7 +39,7 @@ namespace PrimeNumbers
         {
             button1.Invoke((MethodInvoker)(() => button1.Enabled = false));
             var watch = System.Diagnostics.Stopwatch.StartNew();
-
+        
             if (numericUpDown1 == null)
                 numericUpDown1.Value = 1;
 
